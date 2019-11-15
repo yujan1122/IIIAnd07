@@ -13,34 +13,36 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#ff0">
+        android:background="#ff6">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="clear"
+            android:onClick="clearMyView"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="undo"
+            android:onClick="undo"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="redo"
+            android:onClick="redo"
             />
 
     </LinearLayout>
 
 
     <tw.org.iii.iiiand07.MyView
+        android:id="@+id/myView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="5"
-        android:background="#0f0"
+        android:background="#0f6"
         />
-
-
 
 </LinearLayout>
